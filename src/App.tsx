@@ -1,26 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
+import Section from './layout/section';
+import Title from './layout/title';
+import TopBanner from './components/topBanner';
+import TopImage from './components/topImage';
+import TopDescription from './components/topDescription';
+import Location from './components/location';
 import './App.css';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main className='flex flex-col px-4'>
+      <TopBanner/>
+      <TopImage />
+      <TopDescription />
+      <Section>
+        <Title title='INVITATION' subTitle='소중한 분들을 초대합니다.'></Title>
+      </Section>
+      <Section>
+        <Title title='GALLERY' subTitle='갤러리'></Title>
+      </Section>
+      <Section>
+        <Title title='LOCATION' subTitle='오시는길'></Title>
+        <Location />
+      </Section>
+    </main>
+  )
 }
 
 export default App;
