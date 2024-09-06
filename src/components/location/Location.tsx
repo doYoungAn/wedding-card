@@ -10,7 +10,7 @@ const Location: FC = () => {
 
     const map = new window.kakao.maps.Map(container, {
       center: new window.kakao.maps.LatLng(lat, long), //지도의 중심좌표.
-      level: 3 //지도의 레벨(확대, 축소 정도)
+      level: 4 //지도의 레벨(확대, 축소 정도)
     });
 
     const markerPosition  = new window.kakao.maps.LatLng(lat, long); 

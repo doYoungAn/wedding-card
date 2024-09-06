@@ -1,17 +1,12 @@
 import { FC, useEffect, useState } from 'react';
 import { DAY_NAMES, makeMonthInDays } from './../../logic/calendar';
-
-const WEDDING_DATE = '2024-12-21';
+import { WEDDING_DATE } from './../../data/wedding-date';
 
 const Calendar: FC = () => {
-
-  const days = ['일', '월', '화', '수', '목', '금', '토'];
   const [daysInWeeks, setDaysInWeeks] = useState<DayItem[][]>([]);
-
 
   useEffect(() => {
     setDaysInWeeks(makeMonthInDays(WEDDING_DATE));
-    console.log('makeMonthInDays(WEDDING_DATE)', makeMonthInDays(WEDDING_DATE))
   }, []);
 
   return (
@@ -19,7 +14,7 @@ const Calendar: FC = () => {
       <table className="table-auto w-full text-center">
         <thead>
           <tr>
-            {days.map((day, index) => <th className={`font-medium px-2 py-2 ${index === 0 ? 'text-red' : ''}`}>{day}</th>)}
+            {DAY_NAMES.map((day, index) => <th className={`font-medium px-2 py-2 ${index === 0 ? 'text-red' : ''}`}>{day}</th>)}
           </tr>
         </thead>
         {daysInWeeks.map((week) => {

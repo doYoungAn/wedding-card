@@ -3,6 +3,7 @@ import Section from './layout/section';
 import Title from './layout/title';
 import Gallery from './components/gallery';
 import Calendar from './components/calendar';
+import Counter from './components/counter';
 import TopBanner from './components/topBanner';
 import TopImage from './components/topImage';
 import TopDescription from './components/topDescription';
@@ -22,6 +23,7 @@ const App: FC = () => {
       <Section>
         <Title title='CALENDAR' subTitle='일정' />
         <Calendar />
+        <Counter />
       </Section>
       <Section>
         <Title title='GALLERY' subTitle='갤러리' />
