@@ -15,11 +15,17 @@ const Location: FC = () => {
 
     const markerPosition  = new window.kakao.maps.LatLng(lat, long); 
 
-// 마커를 생성합니다
+  // 마커를 생성합니다
     const marker = new window.kakao.maps.Marker({
         position: markerPosition
     });
     marker.setMap(map);
+
+    
+
+    // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+    var zoomControl = new window.kakao.maps.ZoomControl();
+    map.addControl(zoomControl, window.kakao.maps.ControlPosition.RIGHT);
 
   }, []);
 
