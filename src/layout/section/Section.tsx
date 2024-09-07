@@ -1,9 +1,13 @@
 import { FC, PropsWithChildren } from 'react';
 
-const Section: FC<PropsWithChildren> = ({ children }) => {
+interface SectionProps {
+  bg?: 'secondary',
+}
+
+const Section: FC<SectionProps & PropsWithChildren> = ({ children, bg }) => {
 
   return (
-    <section className="mb-6">
+    <section className={`px-4 py-10 mb-6 ${bg ? 'bg-secondBg' : ''}`}>
       {children}
     </section>
   )

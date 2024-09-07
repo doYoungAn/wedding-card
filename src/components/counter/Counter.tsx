@@ -41,28 +41,28 @@ const Counter: FC = () => {
   }
 
   return (
-    <div className='flex flex-col gap-4 items-center'>
-      <div className='flex flex-row items-center justify-center gap-4'>
-        <div className='flex flex-col p-3 bg-primary rounded-lg'>
+    <div className='flex flex-col gap-10 items-center font-IropkeBatangM'>
+      <div className='flex flex-row items-center justify-center gap-4 text-title'>
+        <div className='flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1'>
           <span>{remainDay}</span>
-          <span className='text-xs'>Days</span>
+          <span className='text-[10px]'>DAY</span>
         </div>
-        <div className='flex flex-col p-3 bg-primary rounded-lg'>
+        <div className='flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1'>
           <span>{remainHour}</span>
-          <span className='text-xs'>HOUR</span>
+          <span className='text-[10px]'>HOUR</span>
         </div>
-        <div className='flex flex-col p-3 bg-primary rounded-lg'>
+        <div className='flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1'>
           <span>{remainMinute}</span>
-          <span className='text-xs'>MIN</span>
+          <span className='text-[10px]'>MIN</span>
         </div>
-        <div className='flex flex-col p-3 bg-primary rounded-lg'>
+        <div className='flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1'>
           <span>{remainSecond}</span>
-          <span className='text-xs'>SEC</span>
+          <span className='text-[10px]'>SEC</span>
         </div>
       </div>
 
-      <div>
-        도영 | 선미의 결혼식이 {remainDay + 1}일 남았습니다.
+      <div className='font-IropkeBatangM text-contentPrimary'>
+        도영 ❤️ 선미의 결혼식이 <b className='text-primary font-semibold'>{remainDay + 1}일</b> 남았습니다.
       </div>
     </div>
   )

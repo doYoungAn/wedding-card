@@ -8,35 +8,60 @@ import TopBanner from './components/topBanner';
 import TopImage from './components/topImage';
 import TopDescription from './components/topDescription';
 import Location from './components/location';
+import Give from './components/give';
+import Finish from './components/finish';
+import Footer from './layout/footer';
+import Information from './components/information';
+import Main from './layout/main';
 import './App.css';
+
+import { ToastContainer } from 'react-toastify';
+
+  import 'react-toastify/dist/ReactToastify.css';
 
 const App: FC = () => {
 
   return (
-    <main className='flex flex-col px-4 font-pre'>
+    <Main>
       <TopBanner/>
       <TopImage />
       <TopDescription />
       <Section>
         <Title title='INVITATION' subTitle='소중한 분들을 초대합니다.' />
+        <div className='w-full h-[400px]'></div>
       </Section>
-      <Section>
+      <Section bg="secondary">
         <Title title='CALENDAR' subTitle='일정' />
         <Calendar />
         <Counter />
       </Section>
       <Section>
         <Title title='GALLERY' subTitle='갤러리' />
-        <Gallery></Gallery>
+        {/* <Gallery></Gallery> */}
+        <div className='w-full h-[500px]'></div>
       </Section>
       <Section>
         <Title title='LOCATION' subTitle='오시는길' />
         <Location />
       </Section>
       <Section>
-        <Title title='GIVE' subTitle='마음 전하실 곳' />
+        <Title title='INFORMATION' subTitle='예식정보 및 안내사항' />
+        <div className='w-full h-[300px]'></div>
+        <Information />
       </Section>
-    </main>
+      <Section>
+        <Title title='GIVE' subTitle='마음 전하실 곳' />
+        <Give />
+      </Section>
+
+      <Finish />
+      <Footer />
+
+      <ToastContainer 
+        position="top-center"    
+        autoClose={1000}
+      />
+    </Main>
   )
 }
 
