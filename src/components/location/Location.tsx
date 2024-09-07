@@ -1,4 +1,7 @@
 import { FC, useEffect } from 'react';
+import NaverMapIcon from './../../assets/icon/icon_navermap_w48.png';
+import KakaoMapIcon from './../../assets/icon/icon_kakaonavi_w48.png';
+import TmapIcon from './../../assets/icon/icon_tmap_w48.png';
 
 const Location: FC = () => {
 
@@ -38,6 +41,28 @@ const Location: FC = () => {
         </div>
       </div>
       <div id="map" style={ { width: '100%', height: 400 }}></div>
+      <div className='flex flex-row bg-darkBg text-contentPrimary'>
+        <div className='flex flex-1 px-2 py-3 flex-row items-center' onClick={() => {
+          window.open('https://naver.me/xUw4utMx', '_blank')
+        }}>
+          <img src={NaverMapIcon} alt="" className='w-[16px] h-[16px] mr-2 rounded-sm' />
+          <span className='text-xs'>네이버 지도</span>
+        </div>
+        <div className='flex flex-1 px-2 py-3 flex-row items-center' onClick={() => {
+          window.open('https://kko.to/wlBrOUcGQM', '_blank')
+        }}>
+          <img src={KakaoMapIcon} alt="" className='w-[16px] h-[16px] mr-2 rounded-sm' />
+          <span className='text-xs'>카카오 네비</span>
+        </div>
+        <div className='flex flex-1 px-2 py-3 flex-row items-center' onClick={() => {
+          window.open('https://tmap.life/ec469cf9', '_blank')
+        }}>
+          <img src={TmapIcon} alt="" className='w-[16px] h-[16px] mr-2 rounded-sm' />
+          <span className='text-xs'>
+            티맵
+          </span>
+        </div>
+      </div>
     </div>
   )
 }
