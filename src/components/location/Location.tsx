@@ -34,7 +34,7 @@ const Location: FC = () => {
       <div className='w-full py-4 font-IropkeBatangM flex flex-col items-center justify-center gap-3'>
         <div className=' text-base'>더 링크 호텔 화이트홀(8F)</div>
         <div className='text-[#797979] text-sm'>
-          서울 구로구 경인로 610 (신도림동)
+          서울특별시 구로구 경인로 610 (지번) 신도림동 413-9
         </div>
       </div>
       <div id="map" style={ { width: '100%', height: 400 }}></div>
