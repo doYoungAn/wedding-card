@@ -11,7 +11,7 @@ const TopDescription: FC = () => {
       </div>
       <div className='flex flex-col items-center font-IropkeBatangM gap-3'>
         <span>2024년 12월 21일 토요일 오후 4시 20분</span>
-        <span>더 링크 호텔 화이트홀 (8F)</span>
+        <span>더 링크 호텔 화이트홀 (7F)</span>
       </div>
     </div>
   )

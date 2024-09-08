@@ -1,6 +1,6 @@
 interface GalleryItem {
   src: string;
   gridArea: string;
-  height: 100 | 202;
+  height: 150 | 302;
   objectPosition?: string;
 }
