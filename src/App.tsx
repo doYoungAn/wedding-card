@@ -52,7 +52,6 @@ const App: FC = () => {
       </Section>
       <Section>
         <Title title='INFORMATION' subTitle='예식정보 및 안내사항' />
-        <div className='w-full h-[300px]'></div>
         <Information />
       </Section>
       <Section>
