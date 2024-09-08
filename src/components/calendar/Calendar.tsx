@@ -15,7 +15,7 @@ const Calendar: FC = () => {
         2024.12.21
       </div>
       <div className='w-full text-center font-IropkeBatangM text-sm'>
-        토요일 오후 4시 30분
+        토요일 오후 4시 20분
       </div>
       <div className='py-8 px-4 font-IropkeBatangM text-contentPrimary'>
         <table className="table-auto w-full text-center">

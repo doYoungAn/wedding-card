@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Helmet } from 'react-helmet';
 import Section from './layout/section';
 import Title from './layout/title';
 import Gallery from './components/gallery';
@@ -14,15 +15,21 @@ import Footer from './layout/footer';
 import Information from './components/information';
 import Main from './layout/main';
 import './App.css';
+import TopImg from './assets/na_u_us/us_9.jpg';
 
 import { ToastContainer } from 'react-toastify';
 
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App: FC = () => {
 
   return (
     <Main>
+      <Helmet
+        meta={[
+          { property: 'og:image', content: TopImg }
+        ]}
+      />
       <TopBanner/>
       <TopImage />
       <TopDescription />
@@ -37,8 +44,7 @@ const App: FC = () => {
       </Section>
       <Section>
         <Title title='GALLERY' subTitle='갤러리' />
-        {/* <Gallery></Gallery> */}
-        <div className='w-full h-[500px]'></div>
+        <Gallery />
       </Section>
       <Section>
         <Title title='LOCATION' subTitle='오시는길' />
