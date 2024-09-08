@@ -15,14 +15,15 @@ import Ws13 from './../assets/ws/ws_13.jpg';
 
 export const GALLERY_IMAGES: GalleryItem[] = [
   {
-    src: Us11,
+    src: Us3,
     gridArea: 'span 2 / 1 / auto',
     height: 302,
   },
   {
-    src: Us3,
+    src: Ws9,
     gridArea: 'span 1 / 2 / auto',
     height: 150,
+    objectPosition: '0 0%',
   },
   {
     src: Us8,
@@ -78,7 +79,7 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     objectPosition: '0 0%',
   },
   {
-    src: Ws9,
+    src: Us11,
     gridArea: 'span 2 / 2 / auto',
     height: 302,
   },
