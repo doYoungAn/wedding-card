@@ -1,17 +1,17 @@
-import Us3 from './../assets/na_u_us/us_3.jpg';
-import Us4 from './../assets/na_u_us/us_4.jpg';
-import Us8 from './../assets/na_u_us/us_8.jpg';
-import Us10 from './../assets/na_u_us/us_10.jpg';
-import Us11 from './../assets/na_u_us/us_11.jpg';
-import Ws1 from './../assets/ws/ws_1.jpg';
-import Ws2 from './../assets/ws/ws_2.jpg';
-import Ws4 from './../assets/ws/ws_4.jpg';
-import Ws6 from './../assets/ws/ws_6.jpg';
-import Ws8 from './../assets/ws/ws_8.jpg';
-import Ws9 from './../assets/ws/ws_9.jpg';
-import Ws11 from './../assets/ws/ws_11.jpg';
-import Ws12 from './../assets/ws/ws_12.jpg';
-import Ws13 from './../assets/ws/ws_13.jpg';
+import Us3 from './../assets/optimization/na_u_us/us_3.webp';
+import Us4 from './../assets/optimization/na_u_us/us_4.webp';
+import Us8 from './../assets/optimization/na_u_us/us_8.webp';
+import Us10 from './../assets/optimization/na_u_us/us_10.webp';
+import Us11 from './../assets/optimization/na_u_us/us_11.webp';
+import Ws1 from './../assets/optimization/ws/ws_1.webp';
+import Ws2 from './../assets/optimization/ws/ws_2.webp';
+import Ws4 from './../assets/optimization/ws/ws_4.webp';
+import Ws6 from './../assets/optimization/ws/ws_6.webp';
+import Ws8 from './../assets/optimization/ws/ws_8.webp';
+import Ws9 from './../assets/optimization/ws/ws_9.webp';
+import Ws11 from './../assets/optimization/ws/ws_11.webp';
+import Ws12 from './../assets/optimization/ws/ws_12.webp';
+import Ws13 from './../assets/optimization/ws/ws_13.webp';
 
 export const GALLERY_IMAGES: GalleryItem[] = [
   {
