@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { Helmet } from 'react-helmet';
 import Section from './layout/section';
 import Title from './layout/title';
 import Gallery from './components/gallery';
+import Contact from './components/contact';
 import Calendar from './components/calendar';
 import Counter from './components/counter';
 import TopBanner from './components/topBanner';
@@ -15,7 +15,6 @@ import Footer from './layout/footer';
 import Information from './components/information';
 import Main from './layout/main';
 import './App.css';
-import TopImg from './assets/na_u_us/us_9.jpg';
 
 import { ToastContainer } from 'react-toastify';
 
@@ -25,17 +24,15 @@ const App: FC = () => {
 
   return (
     <Main>
-      <Helmet
-        meta={[
-          { property: 'og:image', content: TopImg }
-        ]}
-      />
       <TopBanner/>
       <TopImage />
       <TopDescription />
       <Section>
         <Title title='INVITATION' subTitle='소중한 분들을 초대합니다.' />
         <div className='w-full h-[400px]'></div>
+      </Section>
+      <Section>
+        <Contact />
       </Section>
       <Section bg="secondary">
         <Title title='CALENDAR' subTitle='일정' />
