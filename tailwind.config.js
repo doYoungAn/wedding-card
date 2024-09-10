@@ -13,6 +13,7 @@ module.exports = {
       whiteBg: '#ffffff',
       secondBg: '#f6f5f5',
       darkBg: '#f2eeee',
+      modalBackBg: 'rgba(0, 0, 0, 0.48)',
 
       mainBorder: '#e8dfdf',
 

@@ -23,13 +23,13 @@ export const BRIDE_ACCOUNTS: Account[] = [
     accountNumber: '346501-04-217956'
   },
   {
-    owner: '신부아버님',
+    owner: '홍원국',
     bankName: '국민',
-    accountNumber: '12345-12345'
+    accountNumber: '669102-01-437787'
   },
   {
-    owner: '신부어머님',
+    owner: '한진숙',
     bankName: '국민',
-    accountNumber: '12345-12345'
+    accountNumber: '669101-01-340879'
   },
 ];

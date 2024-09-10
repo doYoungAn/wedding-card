@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import TopImg from './../../assets/na_u_us/us_9.jpg';
+import TopImg from './../../assets/optimization/na_u_us/us_9.webp';
 
 const TopImage: FC = () => {
 
