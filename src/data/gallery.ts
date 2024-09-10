@@ -1,5 +1,6 @@
 import Us3 from './../assets/optimization/na_u_us/us_3.webp';
 import Us4 from './../assets/optimization/na_u_us/us_4.webp';
+import Us5 from './../assets/optimization/na_u_us/us_5.webp';
 import Us8 from './../assets/optimization/na_u_us/us_8.webp';
 import Us10 from './../assets/optimization/na_u_us/us_10.webp';
 import Us11 from './../assets/optimization/na_u_us/us_11.webp';
@@ -15,7 +16,7 @@ import Ws13 from './../assets/optimization/ws/ws_13.webp';
 
 export const GALLERY_IMAGES: GalleryItem[] = [
   {
-    optimizationSrc: Us3,
+    optimizationSrc: Ws8,
     gridArea: 'span 2 / 1 / auto',
     height: 302,
   },
@@ -41,7 +42,7 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     height: 150,
   },
   {
-    optimizationSrc: Ws8,
+    optimizationSrc: Us3,
     gridArea: 'span 2 / 2 / auto',
     height: 302,
   },
@@ -50,6 +51,11 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     gridArea: 'span 1 / 1 / auto',
     height: 150,
     objectPosition: '0 0%',
+  },
+  {
+    optimizationSrc: Us5,
+    gridArea: 'span 2 / 1 / auto / 3',
+    height: 302,
   },
   {
     optimizationSrc: Ws1,
