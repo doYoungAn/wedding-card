@@ -14,6 +14,7 @@ module.exports = {
       secondBg: '#f6f5f5',
       darkBg: '#f2eeee',
       modalBackBg: 'rgba(0, 0, 0, 0.48)',
+      modalDarkBackBg: 'rgba(0, 0, 0, 0.70)',
 
       mainBorder: '#e8dfdf',
 
