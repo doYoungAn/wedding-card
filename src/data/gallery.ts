@@ -16,7 +16,7 @@ import Ws13 from './../assets/optimization/ws/ws_13.webp';
 
 export const GALLERY_IMAGES: GalleryItem[] = [
   {
-    optimizationSrc: Ws8,
+    optimizationSrc: Us3, // us3
     gridArea: 'span 2 / 1 / auto',
     height: 302,
   },
@@ -32,7 +32,7 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     height: 150,
   },
   {
-    optimizationSrc: Us10,
+    optimizationSrc: Us5,
     gridArea: 'span 2 / 1 / auto / 3',
     height: 302,
   },
@@ -42,18 +42,18 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     height: 150,
   },
   {
-    optimizationSrc: Us3,
+    optimizationSrc: Ws8,
     gridArea: 'span 2 / 2 / auto',
     height: 302,
   },
   {
-    optimizationSrc: Ws11,
+    optimizationSrc: Ws13,
     gridArea: 'span 1 / 1 / auto',
     height: 150,
     objectPosition: '0 0%',
   },
   {
-    optimizationSrc: Us5,
+    optimizationSrc: Us10,
     gridArea: 'span 2 / 1 / auto / 3',
     height: 302,
   },
@@ -90,7 +90,7 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     height: 302,
   },
   {
-    optimizationSrc: Ws13,
+    optimizationSrc: Ws11,
     gridArea: 'span 1 / 1 / auto',
     height: 150,
     objectPosition: '0 0%',
