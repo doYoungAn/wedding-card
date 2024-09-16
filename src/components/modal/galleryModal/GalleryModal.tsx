@@ -1,5 +1,6 @@
 import { FC, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { ReactComponent as CloseIcon } from './../../../assets/icon/close.svg';
 import { GALLERY_IMAGES } from './../../../data/gallery';
 
 import 'swiper/css';
@@ -24,18 +25,25 @@ const GalleryModal: FC<GalleryModalProps> = ({ initialSlide = 0, onClickOutSide,
 
   return (
     
-      <div ref={nodeRef} className='fixed top-0 left-0 w-[100vw] h-[100vh] bg-modalBackBg flex items-center justify-center flex-col z-[1000]' onClick={(e) => {
-        e.stopPropagation();
-        console.log('click?')
-        onClickOutSide?.();
+      <div ref={nodeRef} className='fixed top-0 left-0 w-[100vw] h-[100vh] bg-modalBackBg flex flex-col z-[1000]' onClick={(e) => {
+        // e.stopPropagation();
+        // console.log('click?')
+        // onClickOutSide?.();
       }}>
-        <div className='w-full flex items-center' onClick={(e) => e.stopPropagation()}>
+        <div className='w-full h-[80px] flex items-center justify-end px-4'>
+          <CloseIcon width={30} height={30} className='fill-[#fff]' onClick={() => {
+            console.log('클릭?')
+            onClickOutSide?.()
+          }} />
+        </div>
+        <div className='w-full flex items-center' style={{ height: 'calc(100vh - 80px)' }} onClick={(e) => e.stopPropagation()}>
           <Swiper
             initialSlide={initialSlide}
+            loop
           >
             {GALLERY_IMAGES.map((gallery) => (
-              <SwiperSlide>
-                <div className='flex items-center'>
+              <SwiperSlide style={{ height: '100%' }}>
+                <div className='flex items-center h-[700px]'>
                   <img src={gallery.optimizationSrc} alt='' loading="lazy" />
                 </div>
               </SwiperSlide>
