@@ -1,11 +1,14 @@
 import { FC } from 'react';
-import Flower from './../../assets/flower.png'
+import Flower from './../../assets/flower.png';
+import Snow1 from './../../assets/snow_1.png';
+import Snow2 from './../../assets/snow_2.png';
 
 const Invitation: FC = () => {
 
   return (
     <div className='flex items-center justify-center flex-col'>
-      <img src={Flower} alt='' className='mb-8' />
+      {/* <img src={Flower} alt='' className='mb-8' /> */}
+      <img src={Snow1} alt='' className='mb-8' />
 
       <div className='font-IropkeBatangM text-contentPrimary mb-2'>
         If I know what love is, it is because of you.

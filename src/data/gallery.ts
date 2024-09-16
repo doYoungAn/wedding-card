@@ -52,11 +52,11 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     height: 150,
     objectPosition: '0 0%',
   },
-  {
-    optimizationSrc: Us10,
-    gridArea: 'span 2 / 1 / auto / 3',
-    height: 302,
-  },
+  // {
+  //   optimizationSrc: Us10,
+  //   gridArea: 'span 2 / 1 / auto / 3',
+  //   height: 302,
+  // },
   {
     optimizationSrc: Ws1,
     gridArea: 'span 2 / 1 / auto',

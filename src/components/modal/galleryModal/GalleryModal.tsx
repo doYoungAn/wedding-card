@@ -40,10 +40,11 @@ const GalleryModal: FC<GalleryModalProps> = ({ initialSlide = 0, onClickOutSide,
           <Swiper
             initialSlide={initialSlide}
             loop
+            style={{ height: 'calc(100vh - 80px)' }}
           >
             {GALLERY_IMAGES.map((gallery) => (
               <SwiperSlide style={{ height: '100%' }}>
-                <div className='flex items-center h-[700px]'>
+                <div className='flex items-center h-full'>
                   <img src={gallery.optimizationSrc} alt='' loading="lazy" />
                 </div>
               </SwiperSlide>
