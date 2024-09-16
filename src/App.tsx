@@ -14,6 +14,7 @@ import Finish from './components/finish';
 import Footer from './layout/footer';
 import Information from './components/information';
 import Main from './layout/main';
+import Invitation from './components/invitation';
 import './App.css';
 
 import { ToastContainer } from 'react-toastify';
@@ -29,7 +30,7 @@ const App: FC = () => {
       <TopDescription />
       <Section>
         <Title title='INVITATION' subTitle='소중한 분들을 초대합니다.' />
-        <div className='w-full h-[400px]'></div>
+        <Invitation />
       </Section>
       <Section>
         <Contact />
