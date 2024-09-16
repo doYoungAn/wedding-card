@@ -26,7 +26,7 @@ const GalleryModal: FC<GalleryModalProps> = ({ initialSlide = 0, onClickOutSide,
   return (
     
       <div ref={nodeRef} className='fixed top-0 left-0 w-[100vw] h-[100vh] bg-modalBackBg flex flex-col z-[1000]' onClick={(e) => {
-        // e.stopPropagation();
+        e.stopPropagation();
         // console.log('click?')
         // onClickOutSide?.();
       }}>
