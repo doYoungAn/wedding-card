@@ -1,3 +1,3 @@
-import Give from "./Give";
+import Give from './Give';
 
 export default Give;

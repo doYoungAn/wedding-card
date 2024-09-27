@@ -1,3 +1,3 @@
-import TopImage from "./TopImage";
+import TopImage from './TopImage';
 
 export default TopImage;

@@ -15,7 +15,6 @@ import Ws12 from './../../assets/ws/ws_12.jpg';
 import Ws13 from './../../assets/ws/ws_13.jpg';
 
 const Gallery: FC = () => {
-
   return (
     <div></div>
     // <div className='grid grid-cols-2 grid-rows-11 gap-[2px]'>
@@ -62,7 +61,7 @@ const Gallery: FC = () => {
     //     <img className='object-cover w-full h-full' src={Us3} alt="" />
     //   </div>
     // </div>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;

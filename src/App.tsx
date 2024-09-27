@@ -22,50 +22,46 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App: FC = () => {
-
   return (
     <Main>
-      <TopBanner/>
+      <TopBanner />
       <TopImage />
       <TopDescription />
       <Section>
-        <Title title='INVITATION' subTitle='소중한 분들을 초대합니다.' />
+        <Title title="INVITATION" subTitle="소중한 분들을 초대합니다." />
         <Invitation />
       </Section>
       <Section>
         <Contact />
       </Section>
       <Section bg="secondary">
-        <Title title='CALENDAR' subTitle='일정' />
+        <Title title="CALENDAR" subTitle="일정" />
         <Calendar />
         <Counter />
       </Section>
       <Section>
-        <Title title='GALLERY' subTitle='갤러리' />
+        <Title title="GALLERY" subTitle="갤러리" />
         <Gallery />
       </Section>
       <Section>
-        <Title title='LOCATION' subTitle='오시는길' />
+        <Title title="LOCATION" subTitle="오시는길" />
         <Location />
       </Section>
       <Section>
-        <Title title='INFORMATION' subTitle='예식정보 및 안내사항' />
+        <Title title="INFORMATION" subTitle="예식정보 및 안내사항" />
         <Information />
       </Section>
       <Section>
-        <Title title='GIVE' subTitle='마음 전하실 곳' />
+        <Title title="GIVE" subTitle="마음 전하실 곳" />
         <Give />
       </Section>
 
       <Finish />
       <Footer />
 
-      <ToastContainer 
-        position="top-center"    
-        autoClose={1000}
-      />
+      <ToastContainer position="top-center" autoClose={1000} />
     </Main>
-  )
-}
+  );
+};
 
 export default App;

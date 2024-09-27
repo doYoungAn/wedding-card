@@ -95,4 +95,4 @@ export const GALLERY_IMAGES: GalleryItem[] = [
     height: 150,
     objectPosition: '0 0%',
   },
-]
+];

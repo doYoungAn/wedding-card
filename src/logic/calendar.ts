@@ -4,19 +4,19 @@ dayjs.locale('ko');
 
 const chunkArrayReduce = (arr: any[], size: number) => {
   return arr.reduce((acc, _, index) => {
-      if (index % size === 0) {
-          acc.push(arr.slice(index, index + size));
-      }
-      return acc;
+    if (index % size === 0) {
+      acc.push(arr.slice(index, index + size));
+    }
+    return acc;
   }, []);
-}
+};
 
 export const DAY_NAMES = ['일', '월', '화', '수', '목', '금', '토'];
 
 export const makeMonthInDays = (targetDate: string) => {
   const firstDate = dayjs(targetDate).startOf('months');
   const firstDateDay = firstDate.day();
-  const lastDate  = dayjs(targetDate).endOf('months');
+  const lastDate = dayjs(targetDate).endOf('months');
   const lastDateDay = lastDate.day();
   const daysInMonth = dayjs(dayjs(targetDate).get('y')).daysInMonth();
 
@@ -26,7 +26,7 @@ export const makeMonthInDays = (targetDate: string) => {
     const date = firstDate.subtract(i + 1, 'day');
     dateList.push({
       day: date.get('D'),
-      isToday: false
+      isToday: false,
     });
   }
 
@@ -42,11 +42,11 @@ export const makeMonthInDays = (targetDate: string) => {
     const date = lastDate.add(i + 1, 'day');
     dateList.push({
       day: date.get('D'),
-      isToday: false
+      isToday: false,
     });
   }
 
   const dateByWeek: DayItem[][] = chunkArrayReduce(dateList, 7);
-  
+
   return dateByWeek;
-}
+};

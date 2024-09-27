@@ -1,3 +1,3 @@
-import Finish from "./Finish";
+import Finish from './Finish';
 
-export default Finish
+export default Finish;

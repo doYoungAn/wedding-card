@@ -5,12 +5,14 @@ interface BaseButtonProps extends PropsWithChildren {
 }
 
 const BaseButton: FC<BaseButtonProps> = ({ children, onClick }) => {
-
   return (
-    <button className='text-xs border px-2 py-1 rounded-md border-mainBorder text-contentPrimary' onClick={() => onClick?.()}>
+    <button
+      className="text-xs border px-2 py-1 rounded-md border-mainBorder text-contentPrimary"
+      onClick={() => onClick?.()}
+    >
       {children}
     </button>
-  )
-}
+  );
+};
 
-export default BaseButton
+export default BaseButton;

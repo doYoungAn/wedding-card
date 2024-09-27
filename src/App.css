@@ -37,7 +37,6 @@
   }
 }
 
-
 .my-node-enter {
   opacity: 0;
 }
@@ -57,10 +56,12 @@
   opacity: 0;
   transform: translateY(100%);
 }
-.transition-slide-bottom-to-top-enter-active  {
+.transition-slide-bottom-to-top-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
 }
 .transition-slide-bottom-to-top-exit {
   opacity: 1;
@@ -69,5 +70,7 @@
 .transition-slide-bottom-to-top-exit-active {
   opacity: 0;
   transform: translateY(100%);
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
 }

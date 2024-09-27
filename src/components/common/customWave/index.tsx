@@ -1,3 +1,3 @@
-import CustomWave from "./CustomWave";
+import CustomWave from './CustomWave';
 
 export default CustomWave;

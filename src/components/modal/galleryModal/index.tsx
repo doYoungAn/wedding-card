@@ -1,3 +1,3 @@
-import GalleryModal from "./GalleryModal";
+import GalleryModal from './GalleryModal';
 
-export default GalleryModal
+export default GalleryModal;

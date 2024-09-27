@@ -1,3 +1,3 @@
-import TopBanner from "./TopBanner";
+import TopBanner from './TopBanner';
 
-export default TopBanner
+export default TopBanner;

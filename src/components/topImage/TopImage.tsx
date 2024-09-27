@@ -3,25 +3,24 @@ import CustomWave from '../common/customWave';
 import TopImg from './../../assets/optimization/na_u_us/us_9.webp';
 
 const TopImage: FC = () => {
-
   return (
-    <div className=' relative'>
-      <div className='absolute top-0 rotate-180'>
+    <div className=" relative">
+      <div className="absolute top-0 rotate-180">
         <CustomWave format="default" />
       </div>
-      <div className='absolute top-0 rotate-180'>
+      <div className="absolute top-0 rotate-180">
         <CustomWave format="custom" />
       </div>
-      <img src={TopImg} alt='' />
-      
-      <div className='absolute bottom-0'>
+      <img src={TopImg} alt="" />
+
+      <div className="absolute bottom-0">
         <CustomWave format="default" />
       </div>
-      <div className='absolute bottom-0'>
+      <div className="absolute bottom-0">
         <CustomWave format="custom" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TopImage
+export default TopImage;

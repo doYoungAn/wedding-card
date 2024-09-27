@@ -1,3 +1,3 @@
-import TopDescription from "./TopDescription";
+import TopDescription from './TopDescription';
 
 export default TopDescription;

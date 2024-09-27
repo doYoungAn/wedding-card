@@ -2,7 +2,6 @@ import { FC, useEffect, useState } from 'react';
 import { WEDDING_DATE, WEDDING_TIME } from './../../data/wedding-date';
 
 const Counter: FC = () => {
-
   const [remainDay, setRemainDay] = useState(0);
   const [remainHour, setRemainHour] = useState(0);
   const [remainMinute, setRemainMinute] = useState(0);
@@ -13,7 +12,7 @@ const Counter: FC = () => {
 
     return () => {
       clearInterval(intervalId);
-    }
+    };
   }, []);
 
   const timer = () => {
@@ -36,36 +35,45 @@ const Counter: FC = () => {
       setRemainMinute(m);
       setRemainSecond(s);
     }, 1000);
-    
+
     return intervalId;
-  }
+  };
 
   return (
-    <div className='flex flex-col gap-10 items-center font-IropkeBatangM'>
-      <div className='flex flex-row items-center justify-center gap-4 text-title'>
-        <div className='flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1'>
-          <span><b>{remainDay}</b></span>
-          <span className='text-[10px]'>DAY</span>
+    <div className="flex flex-col gap-10 items-center font-IropkeBatangM">
+      <div className="flex flex-row items-center justify-center gap-4 text-title">
+        <div className="flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1">
+          <span>
+            <b>{remainDay}</b>
+          </span>
+          <span className="text-[10px]">DAY</span>
         </div>
-        <div className='flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1'>
-          <span><b>{remainHour}</b></span>
-          <span className='text-[10px]'>HOUR</span>
+        <div className="flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1">
+          <span>
+            <b>{remainHour}</b>
+          </span>
+          <span className="text-[10px]">HOUR</span>
         </div>
-        <div className='flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1'>
-          <span><b>{remainMinute}</b></span>
-          <span className='text-[10px]'>MIN</span>
+        <div className="flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1">
+          <span>
+            <b>{remainMinute}</b>
+          </span>
+          <span className="text-[10px]">MIN</span>
         </div>
-        <div className='flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1'>
-          <span><b>{remainSecond}</b></span>
-          <span className='text-[10px]'>SEC</span>
+        <div className="flex flex-col items-center p-3 bg-primary rounded-lg min-w-14 max-w-14 gap-1">
+          <span>
+            <b>{remainSecond}</b>
+          </span>
+          <span className="text-[10px]">SEC</span>
         </div>
       </div>
 
-      <div className='font-IropkeBatangM text-contentPrimary'>
-        도영 ❤️ 선미의 결혼식이 <b className='text-red font-semibold'>{remainDay + 1}일</b> 남았습니다.
+      <div className="font-IropkeBatangM text-contentPrimary">
+        도영 ❤️ 선미의 결혼식이{' '}
+        <b className="text-red font-semibold">{remainDay + 1}일</b> 남았습니다.
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;

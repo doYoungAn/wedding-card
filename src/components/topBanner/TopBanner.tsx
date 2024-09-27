@@ -5,9 +5,9 @@ const TopBanner: FC = () => {
   return (
     <div className="flex flex-col w-full items-center pt-[48px] pb-[30px] text-contentPrimary">
       <span className="text-xl">2024 / 12 / 21</span>
-      <span className='text-2xl'>SATURDAY</span>
+      <span className="text-2xl">SATURDAY</span>
     </div>
-  )
-}
+  );
+};
 
 export default TopBanner;

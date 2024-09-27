@@ -5,45 +5,46 @@ import { ReactComponent as PhoneIcon } from './../../assets/icon/phone.svg';
 import ContactModal from '../modal/contactModal';
 
 const Contact: FC = () => {
-
   const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
 
   return (
     <>
-      <div className='flex flex-col items-center'>
-        <div className='overflow-hidden rounded-md mb-8'>
-          <img src={Us10} alt='' />
+      <div className="flex flex-col items-center">
+        <div className="overflow-hidden rounded-md mb-8">
+          <img src={Us10} alt="" />
         </div>
-        <div className='flex flex-col items-center justify-center font-IropkeBatangM text-contentPrimary mb-8'>
-          <div className='mb-2'>
+        <div className="flex flex-col items-center justify-center font-IropkeBatangM text-contentPrimary mb-8">
+          <div className="mb-2">
             <span>안찬희</span>
-            <span className='mx-1'>·</span>
+            <span className="mx-1">·</span>
             <span>이순애</span>
-            <span className='text-xs mx-2'>의 장남</span>
-            <span className='text-lg'>
-              안도영
-            </span>
+            <span className="text-xs mx-2">의 장남</span>
+            <span className="text-lg">안도영</span>
           </div>
           <div>
             <span>홍원국</span>
-            <span className='mx-1'>·</span>
+            <span className="mx-1">·</span>
             <span>한진숙</span>
-            <span className='text-xs mx-2'>의 장녀</span>
-            <span className='text-lg'>
-              홍선미
-            </span>
+            <span className="text-xs mx-2">의 장녀</span>
+            <span className="text-lg">홍선미</span>
           </div>
         </div>
 
         <RoundButton onClick={() => setIsOpenModal(true)}>
-          <PhoneIcon width={14} height={14} className='mr-2 fill-contentPrimary' />
+          <PhoneIcon
+            width={14}
+            height={14}
+            className="mr-2 fill-contentPrimary"
+          />
           연락하기
         </RoundButton>
       </div>
 
-      {isOpenModal ? <ContactModal onClickClose={() => setIsOpenModal(false)} /> : null}
+      {isOpenModal ? (
+        <ContactModal onClickClose={() => setIsOpenModal(false)} />
+      ) : null}
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
