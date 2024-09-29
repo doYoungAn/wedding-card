@@ -45,8 +45,8 @@ const ContactModal: FC<ContactModalProps> = ({ onClickClose }) => {
             <span className="mr-4">신랑측</span>
             <span className="text-xs font-pre">GROOM</span>
           </div>
-          {GROOM_PEOPLE.map((person) => (
-            <div className="flex flex-row py-4 font-IropkeBatangM">
+          {GROOM_PEOPLE.map((person, index) => (
+            <div className="flex flex-row py-4 font-IropkeBatangM" key={index}>
               <div className="flex-1 flex items-center text-[#ccc] text-sm">
                 {person.description}
               </div>
@@ -77,8 +77,8 @@ const ContactModal: FC<ContactModalProps> = ({ onClickClose }) => {
             <span className="text-xs font-pre">BRIDE</span>
           </div>
 
-          {BRIDE_PEOPLE.map((person) => (
-            <div className="flex flex-row py-4 font-IropkeBatangM">
+          {BRIDE_PEOPLE.map((person, index) => (
+            <div className="flex flex-row py-4 font-IropkeBatangM" key={index}>
               <div className="flex-1 flex items-center text-[#ccc] text-sm">
                 {person.description}
               </div>

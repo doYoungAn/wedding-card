@@ -23,6 +23,7 @@ const Calendar: FC = () => {
             <tr>
               {DAY_NAMES.map((day, index) => (
                 <th
+                  key={index}
                   className={`font-medium px-2 py-2 ${index === 0 ? 'text-red' : ''}`}
                 >
                   {day}
@@ -30,12 +31,12 @@ const Calendar: FC = () => {
               ))}
             </tr>
           </thead>
-          {daysInWeeks.map((week) => {
+          {daysInWeeks.map((week, index) => {
             return (
-              <tr>
-                {week.map((day, index) => {
+              <tr key={index}>
+                {week.map((day, subIndex) => {
                   return (
-                    <td className="px-2 py-2 relative">
+                    <td className="px-2 py-2 relative" key={subIndex}>
                       {!day.isToday ? (
                         <span className={`${index === 0 ? 'text-red' : ''}`}>
                           {day.day}

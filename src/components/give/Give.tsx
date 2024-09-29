@@ -10,7 +10,11 @@ const Give: FC = () => {
           신랑측 계좌번호
         </div>
         {GROOM_ACCOUNTS.map((groomAccount, index) => (
-          <AccountInfo account={groomAccount} isBorderTop={index !== 0} />
+          <AccountInfo
+            key={index}
+            account={groomAccount}
+            isBorderTop={index !== 0}
+          />
         ))}
       </div>
 
@@ -19,7 +23,11 @@ const Give: FC = () => {
           신부측 계좌번호
         </div>
         {BRIDE_ACCOUNTS.map((groomAccount, index) => (
-          <AccountInfo account={groomAccount} isBorderTop={index !== 0} />
+          <AccountInfo
+            key={index}
+            account={groomAccount}
+            isBorderTop={index !== 0}
+          />
         ))}
       </div>
     </div>

@@ -26,7 +26,7 @@ const Location: FC = () => {
     marker.setMap(map);
 
     // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
-    var zoomControl = new window.kakao.maps.ZoomControl();
+    const zoomControl = new window.kakao.maps.ZoomControl();
     map.addControl(zoomControl, window.kakao.maps.ControlPosition.RIGHT);
   }, []);
 
