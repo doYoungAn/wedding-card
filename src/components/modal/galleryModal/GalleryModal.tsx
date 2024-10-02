@@ -45,7 +45,6 @@ const GalleryModal: FC<GalleryModalProps> = ({
         <div
           className="w-full flex items-center relative"
           style={{ height: 'calc(100vh - 60px)' }}
-          onClick={(e) => e.stopPropagation()}
         >
           <Swiper
             initialSlide={initialSlide}
