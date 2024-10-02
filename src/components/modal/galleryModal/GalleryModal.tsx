@@ -32,7 +32,7 @@ const GalleryModal: FC<GalleryModalProps> = ({
         className="fixed top-0 left-0 w-[100vw] h-[100vh] bg-modalBackBg z-[1000]"
       ></div>
       <div className="fixed top-0 left-0 w-[100vw] h-[100vh] z-[1001] flex flex-col">
-        <div className="w-full h-[80px] flex items-center justify-end px-4">
+        <div className="w-full h-[60px] flex items-center justify-end px-4">
           <CloseIcon
             width={30}
             height={30}
@@ -44,13 +44,13 @@ const GalleryModal: FC<GalleryModalProps> = ({
         </div>
         <div
           className="w-full flex items-center"
-          style={{ height: 'calc(100vh - 80px)' }}
+          style={{ height: 'calc(100vh - 60px)' }}
           onClick={(e) => e.stopPropagation()}
         >
           <Swiper
             initialSlide={initialSlide}
             loop
-            style={{ height: 'calc(100vh - 80px)' }}
+            // style={{ height: 'calc(100vh - 60px)' }}
           >
             {GALLERY_IMAGES.map((gallery, index) => (
               <SwiperSlide style={{ height: '100%' }} key={index}>
