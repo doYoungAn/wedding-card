@@ -32,7 +32,6 @@ const Gallery: FC = () => {
       </div>
       {isOpenModal ? (
         <GalleryModal
-          isOpen={isOpenModal}
           initialSlide={selectedIndex}
           onClickOutSide={() => setIsOpenModal(false)}
         />
