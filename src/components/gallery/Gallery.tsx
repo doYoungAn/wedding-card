@@ -23,7 +23,7 @@ const Gallery: FC = () => {
           >
             <img
               className="object-cover w-full h-full"
-              src={image.optimizationSrc}
+              src={image.mainSrc}
               alt=""
               style={{ objectPosition: image?.objectPosition }}
             />
